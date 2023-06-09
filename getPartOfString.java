@@ -13,9 +13,9 @@ public class Main {
 
     public static int findSpace(String string, int num) {
         if (num == 1) {
-            return string.indexOf(" ");
+            return string.indexOf("\s");
         } else {
-            return string.indexOf(" ", findSpace(string, num - 1) + 1);
+            return string.indexOf("\s", findSpace(string, num - 1) + 1);
         }
     }
 }
